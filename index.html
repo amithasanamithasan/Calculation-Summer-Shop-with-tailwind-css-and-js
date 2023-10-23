@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/fa7b07a92c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'bike-primary': '#E76F51',
+                    'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+
+                }
+            }
+        }
+    }
+</script>
+<style>
+    /* custom style */
+    .footer-color {
+        color: #0b0d17;
+    }
+
+    .font-poppins {
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<body class="font-poppins #FDFDEA bg-white">
+    <header class="md:container md:mx-auto ">
+        <div class="carousel w-full lg:h-[550px] bike-primary-bg">
+            <!-- slide 1 -->
+            <div class="carousel-item relative w-full ">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1 ">
+                        <!-- text  -->
+                        <p class="text-center text-2xl text-bold">---SALE FEVER---</p>
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Purchase TK 200 or
+                            <br>
+                            above & get <span class="text-pink-600">20% off</span>
+                        </h2>
+                        <h1>Use Promo Code</h1>
+                        <input onclick={buttoncupon(event)} value="SELL200" type="button" class=" text-white bg-gradient-to-r
+                from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 
+                focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-10 py-2.5 
+                text-center mr-4 mb-4" />
+
+                    </div>
+                    <div class="felx-1">
+
+                        <img src="./images/Summer 1.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class=" p-20 absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                </div>
+            </div>
+
+
+    </header>
+
+    <!-- card body -->
+    <main class="flex md:container md:max-auto">
+        <section class="flex-col  ">
+            <h3 class="text-3xl font-semibold ">Kitchenware</h3>
+            <div class="  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3  ">
+                <div id="pro-1" class="card w-50 shadow-xl px-2 py-2 rounded  ">
+                    <figure class="px-10 pt-10   bg-slate-300">
+                        <img src="./images/prod1.png" class="rounded" />
+                    </figure>
+                    <div class="card-body  ">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-1" class=" font-semibold text-xl mb-1">K.Accessories</h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl font-semibold text-neutral-400">$<span id="price1-total">45.00</span>
+                                </p>
+
+                            </div>
+                            <div class=" items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+                                <p></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--    product2                -->
+                <div id="pro-2" class="card  w-50 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod2.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-2" class="uppercase font-medium text-xl mb-2 text-gray-800">K.Accessories
+                                    Balon
+                                </h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold ">$<span id="price2-total">50.00</span>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div id="pro-3" class="card  w-45 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod3.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-3" class="uppercase font-medium text-xl mb-2 text-gray-800">Home Cooker
+                                </h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$<span id="price3-total">70.00</span>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- --------------------------------------------------------------------- -->
+                <!-- Product4  -->
+
+                <div id="pro-4" class="card w-50 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod4.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-4" class="uppercase font-medium text-xl mb-2 text-gray-800">Sports back
+                                    cape
+                                </h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$<span id="price4-total">70.00</span>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+                                <p></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--product5  -->
+                <div id="pro-5" class="card  w-50 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod6.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-5" class="uppercase font-medium text-xl mb-2 text-gray-800">Sports cates
+                                </h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$<span id="price5-total">70.00</span>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product 6 -->
+                <div id="pro-6" class="card  w-50 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod7.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 id="name-6" class="uppercase font-medium text-xl mb-2 text-gray-800">Single Relax
+                                    Chair</h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$<span id="price6-total">80.00</span>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+                                <p></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+
+                <div class="card  w-50 bg-base-100 shadow-xl  text-gray-800 px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod8.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray-800">Aaamit hasan
+                                    Chair</h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$45.00</p>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+                                <p></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  w-50 bg-base-100 shadow-xl  text-gray-800  px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod9.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray-800">Amit hasan
+                                    Chair</h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$45.00</p>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+                                <p></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  w-50 bg-base-100 shadow-xl  text-gray-800 px-2 py-2 rounded">
+                    <figure class="px-10 pt-10  bg-slate-300">
+                        <img src="./images/prod8.png" class="rounded-xl text-gray-800" />
+                    </figure>
+                    <div class="card-body items-center text-center  text-gray-800">
+                        <div class="pt-4 pb-3 px-4">
+                            <a href="#">
+                                <h4 class="uppercase font-medium text-xl mb-2 text-gray-800">Amit hasan
+                                    Chair</h4>
+                            </a>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-neutral-400 font-semibold">$45.00</p>
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex gap-1 text-sm text-yellow-400">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <h2 class="card-title"></h2>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- product price total -->
+        <section class="flex-col mt-12 ">
+            <p class="  text-xl p-2 font-semibold ">Have a cupon</p>
+            <div class="flex mb-20">
+                <input id="user-input" class=" p-4 px-7 py-0  " type="text" placeholder="Enter your cupon code">
+                <button id="submit" onclick={applyDiscount()} class="px-7 py-4 btn btn-active btn-secondary"
+                    disabled>Apply</button>
+            </div>
+            <div class="col-span-4 border border-gray-200 p-4 rounded">
+                <h4 class="text-gray-800 text-lg mb-4 font-medium uppercase">order summary</h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <div>
+                            <h5 id="name1-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+
+                        </p>
+                        <p id="p-id1" class="text-gray-800 font-sm"></p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div>
+                            <h5 id="name2-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+
+                        </p>
+                        <p id="p-id2" class="text-gray-800 font-medium"></p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <!-- product3 -->
+                            <h5 id="name3-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+
+                        </p>
+                        <!-- product 3  -->
+                        <p id="p-id3" class="text-gray-800 font-medium"></p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <!-- product4 -->
+                            <h5 id="name4-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+
+                        </p>
+                        <!-- product4 -->
+                        <p id="p-id4" class="text-gray-800 font-medium"></p>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <div>
+                            <!-- product 5 -->
+                            <h5 id="name5-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+                            <!-- product5 -->
+                        </p>
+                        <p id="p-id5" class="text-gray-800 font-sm"></p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div>
+                            <!-- product6 -->
+                            <h5 id="name6-product" class="text-gray-800 font-medium"></h5>
+                            <p class="text-sm text-gray-600"></p>
+                        </div>
+                        <p class="text-gray-600">
+
+                        </p>
+                        <!-- product6 -->
+                        <p id="p-id6" class="text-gray-800 font-medium"></p>
+                    </div>
+
+                    <p class=>__________________________________________________</p>
+
+
+
+                    <div
+                        class="flex justify-between border-b border-gray-200 mt-1 text-gray-800 font-medium py-3 uppercas">
+                        <p>Total Price</p>
+                        <p>$<span id="totalPrice">0.00</span></p>
+                    </div>
+
+                    <div
+                        class="flex justify-between border-b border-gray-200 mt-1 text-gray-800 font-medium py-3 uppercas">
+                        <p>Discount</p>
+                        <p>$ <span id="discountPrice">0.00</span></p>
+                    </div>
+
+                    <div class="flex justify-between text-gray-800 font-medium py-3 uppercas">
+                        <p class="font-semibold">Total</p>
+                        <p>$ <span id="netTotal">0.00</span></p>
+                    </div>
+
+                    <div class="flex items-center mb-4 mt-2">
+
+                        <button id="submitButton" onclick={calcTotal()} class="flex justify-between border-b border-gray-200   btn btn-active btn-secondary">
+                            Make Purchase
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/product.js"></script>
+    <script src="js/totalprice.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/cupponcode.js"></script>
+    <script src="js/congratulation.js"></script>
+    <!-- <script src="js/product2.js"></script>
+     <script src="js/product3.js"></script>
+     <script src="js/product4.js"></script>
+     <script src="js/product5.js"></script>
+     <script src="js/product6.js"></script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
